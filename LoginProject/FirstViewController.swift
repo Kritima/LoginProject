@@ -10,11 +10,23 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+    @IBOutlet weak var lblLogin: UILabel!
+    @IBOutlet weak var txtfldUserName: UITextField!
+    @IBOutlet weak var txtfldPassword: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func btnLogin(_ sender: UIButton) {
+        
+        if(txtfldUserName!==txtfldPassword)
+        {
+            
+        }
+        
+    }
+    
 }
 
