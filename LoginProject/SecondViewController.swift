@@ -10,10 +10,13 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var imgCircus: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        imgCircus.image = UIImage(named: "lion")
     }
     
 
