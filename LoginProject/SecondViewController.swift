@@ -42,6 +42,35 @@ class SecondViewController: UIViewController {
         self.imgCircus.image = UIImage(named: imageName)
     }
     
+    @IBAction func slideChangeImage(_ sender: UISlider) {
+        
+        //print(sender.value)
+        let n = (Int(sender.value))
+        displayImage(index: n)
+    }
+    
+    private func displayImage(index: Int)
+    {
+        var imageName = String()
+            
+            switch index {
+            case 0:
+                imageName = "lion"
+            case 1:
+                imageName = "gorilla"
+            case 2:
+                imageName = "home"
+            case 3:
+                imageName = "ice cream"
+            case 4:
+                imageName = "elephant"
+            default:
+                print("No Image Selected")
+            }
+            
+            self.imgCircus.image = UIImage(named: imageName)
+        }
+    }
     /*
      // MARK: - Navigation
      
@@ -52,4 +81,3 @@ class SecondViewController: UIViewController {
      }
      */
     
-}
