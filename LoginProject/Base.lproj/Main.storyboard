@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First View Controller-->
+        <!--First-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="LoginProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -47,7 +47,7 @@
                         <color key="backgroundColor" red="0.65920805930000004" green="0.79775643350000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="pZt-fi-zzt"/>
+                    <navigationItem key="navigationItem" title="First" id="pZt-fi-zzt"/>
                     <connections>
                         <outlet property="lblLogin" destination="er4-fG-hWg" id="m3S-ZV-16O"/>
                         <outlet property="txtfldPassword" destination="IqL-pv-HF6" id="MhD-cC-V4c"/>
@@ -56,9 +56,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+            <point key="canvasLocation" x="800" y="-1578"/>
         </scene>
-        <!--Second View Controller-->
+        <!--B-->
         <scene sceneID="XUL-qE-w0R">
             <objects>
                 <viewController id="hyQ-a2-L7L" customClass="SecondViewController" customModule="LoginProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -77,11 +77,33 @@
                         <color key="backgroundColor" red="0.66296487569999996" green="0.79534783239999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="eFo-22-xLf"/>
                     </view>
-                    <navigationItem key="navigationItem" id="egt-K0-wAE"/>
+                    <navigationItem key="navigationItem" title="B" id="egt-K0-wAE">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="CVn-sG-42y">
+                            <connections>
+                                <segue destination="GSV-GX-xpr" kind="show" id="U9v-xk-6x5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Zh-DI-vCl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1821.7391304347827" y="137.94642857142856"/>
+            <point key="canvasLocation" x="1557" y="-1578"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nmT-xQ-PKz">
+            <objects>
+                <viewController id="GSV-GX-xpr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iI4-Z4-eKA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="due-Gx-mtV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eN0-2i-JfZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NG8-VK-Ki1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2336" y="-1578"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="74P-WU-Foc">
@@ -99,7 +121,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwd-Us-XLQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+            <point key="canvasLocation" x="51" y="-1578"/>
         </scene>
     </scenes>
 </document>
