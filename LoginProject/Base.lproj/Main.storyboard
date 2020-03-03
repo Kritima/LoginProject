@@ -77,6 +77,21 @@
                                 <rect key="frame" x="20" y="540" width="374" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xQI-xo-8se">
+                                <rect key="frame" x="8" y="191" width="399" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Lion"/>
+                                    <segment title="Gorilla"/>
+                                    <segment title="Home"/>
+                                    <segment title="ice cream"/>
+                                    <segment title="Elephant"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="segImageChange:" destination="hyQ-a2-L7L" eventType="valueChanged" id="Dcj-FT-aHN"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.66296487569999996" green="0.79534783239999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="eFo-22-xLf"/>
